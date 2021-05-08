@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* 不要になったら消す */
+.long{
+  width: 10px;
+  height: 1000px;
+  background-color: thistle;
+}
+
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 100%;
+}
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+header{
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 3;
+  background-color: #ffffff;
+}
+.logo{
+  width: 200px;
+  z-index: 2;
+}
+/* hamburger menu */
+.ham {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 2;
+	width: 50px;
+	height: 50px;
+	background-color: #ffffff;
+}
+.ham_line {
+	position: absolute;
+  left: 15px;
+  width: 20px;
+  height: 2px;
+	background-color: #333333;
+	transition: all 0.3s;
+}
+.ham_line1 {
+	top: 18px;
+}
+.ham_line2 {
+	top: 24px;
+}
+.ham_line3 {
+	top: 30px;
+}
+.clicked .ham_line1 {
+	transform: rotate(45deg);
+	top: 25px;
+}
+.clicked .ham_line2 {
+	width: 0px;
+}
+.clicked .ham_line3 {
+	transform: rotate(-45deg);
+	top: 25px;
+}
+.menu {
+	position: fixed;
+  z-index: 1;
+  left: 0;
+	width: 100vw;
+	top: -400px;
+	background-color: #F7F7F7;
+	transition: all 0.3s;
+  opacity: 0;
+}
+.clicked .menu {
+	top: 70px;
+  opacity: 1;
+}
+.menu a{
+  color: black;
+  text-decoration: none;
+}
+.menu ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu li{
+  height: 70px;
+  border-bottom: 1px solid #b7b7b7;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 90vw;
+  font-weight: bold;
+}
+.menu li:last-child{
+  background-color: #EDE57E;
+  border-bottom: none;
+  margin: 30px;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media (min-width: 768px) {
+}
