@@ -3,7 +3,7 @@
 /* 不要になったら消す */
 .long{
   width: 10px;
-  height: 1000px;
+  height: 2000px;
   background-color: thistle;
 }
 
@@ -64,7 +64,7 @@ header{
 	top: 25px;
 }
 .clicked .ham_line2 {
-	width: 0px;
+	opacity: 0;
 }
 .clicked .ham_line3 {
 	transform: rotate(-45deg);
@@ -112,8 +112,14 @@ header{
   justify-content: center;
   align-items: center;
 }
+/* hamburger menu */
 
-
+/* slick */
+.slick01 img{
+  margin-top: 70px;
+  width: 100vw;
+}
+/* slick */
 
 @media (min-width: 768px) {
 }
